@@ -12,4 +12,9 @@ class Brand extends ActiveRecord
     {
         return 'brands';
     }
+
+    public function getBikes()
+    {
+        return $this->hasMany(Bike::class, ['brand_id' => 'id']);
+    }
 }

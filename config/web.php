@@ -51,6 +51,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 'brand/<slug:\w+>' => 'brand/view',
+                'bike/<slug:\w+>' => 'bike/view',
             ],
         ],
     ],
